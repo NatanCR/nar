@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Phone, MapPin, ArrowLeft } from "lucide-react";
@@ -135,7 +136,7 @@ const Index = () => {
       </section>
 
       {/* Service Pages Navigation */}
-      <section className="py-24">
+      <section id="services" className="py-24">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {servicePages.map((service, index) => (

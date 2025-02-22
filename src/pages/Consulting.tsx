@@ -17,7 +17,7 @@ const Consulting = () => {
     <div className="min-h-screen bg-white">
       <div className="container py-24">
         <Link
-          to="/"
+          to="/#services"
           className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-12"
         >
           <ArrowLeft className="w-5 h-5" />

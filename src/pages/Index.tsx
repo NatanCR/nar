@@ -1,7 +1,6 @@
-
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowRight, Mail, Phone, MapPin, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Index = () => {
@@ -14,6 +13,21 @@ const Index = () => {
     "https://images.unsplash.com/photo-1500673922987-e212871fec22",
     "https://images.unsplash.com/photo-1501854140801-50d01698950b",
   ];
+
+  const nextSlide = () => {
+    setActiveSlide((prev) => (prev + 1) % carouselImages.length);
+  };
+
+  const prevSlide = () => {
+    setActiveSlide((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   const servicePages = [
     {
@@ -32,13 +46,6 @@ const Index = () => {
       path: "/design",
     },
   ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % carouselImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="min-h-screen bg-white">
@@ -109,6 +116,20 @@ const Index = () => {
                 />
               </div>
             ))}
+            <button
+              onClick={prevSlide}
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full transition-colors z-10"
+              aria-label="Previous slide"
+            >
+              <ArrowLeft className="w-6 h-6 text-primary" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full transition-colors z-10"
+              aria-label="Next slide"
+            >
+              <ArrowRight className="w-6 h-6 text-primary" />
+            </button>
           </div>
         </div>
       </section>

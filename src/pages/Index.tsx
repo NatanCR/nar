@@ -20,7 +20,9 @@ const Index = () => {
   };
 
   const prevSlide = () => {
-    setActiveSlide((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
+    setActiveSlide(
+      (prev) => (prev - 1 + carouselImages.length) % carouselImages.length
+    );
   };
 
   useEffect(() => {
@@ -52,12 +54,20 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-        <div className="text-center max-w-4xl mx-auto">
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url("/lovable-uploads/59e2dbe4-773a-4d77-8165-de8d69ea6a30.png")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div className="relative z-10 text-center max-w-4xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-6xl md:text-8xl font-display font-bold text-primary mb-8"
+            className="text-6xl md:text-8xl font-display font-bold text-white mb-8"
           >
             Innovation Studio
           </motion.h1>
@@ -65,7 +75,7 @@ const Index = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="bg-primary text-white px-8 py-4 rounded-full inline-flex items-center gap-2 hover:bg-primary/90 transition-colors"
+            className="bg-white text-primary px-8 py-4 rounded-full inline-flex items-center gap-2 hover:bg-white/90 transition-colors"
           >
             Get in touch
             <ArrowRight className="w-5 h-5" />

@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Phone, MapPin, ArrowLeft } from "lucide-react";
@@ -12,7 +11,7 @@ const Index = () => {
   const carouselImages = [
     "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     "https://images.unsplash.com/photo-1500673922987-e212871fec22",
-    "https://images.unsplash.com/photo-1501854140801-50d01698950b",
+    "/lovable-uploads/ce229bd5-89fb-4a04-825d-ef7b1a6c31a7.png",
   ];
 
   const nextSlide = () => {

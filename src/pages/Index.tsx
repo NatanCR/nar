@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Phone, MapPin, ArrowLeft } from "lucide-react";
@@ -57,8 +58,9 @@ const Index = () => {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage: 'url("/lovable-uploads/eb38202b-b363-4da9-9365-ec4f1fa5f162.png")',
-            backgroundSize: 'cover',
+            backgroundSize: '120%', // Slightly zoomed in
             backgroundPosition: 'center',
+            transition: 'background-size 0.3s ease-out',
           }}
         />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
@@ -66,7 +68,13 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-6xl md:text-8xl font-display font-bold text-white mb-8"
+            className="text-6xl md:text-8xl font-display font-bold mb-8"
+            style={{
+              background: 'linear-gradient(135deg, #DBF9E0 0%, #A5C34F 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
           >
             Innovation Studio
           </motion.h1>

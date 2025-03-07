@@ -116,7 +116,7 @@ const Index = () => {
         <div className="relative z-10 h-full flex items-center justify-center px-4">
           <div className="text-center max-w-3xl">
             <h2 className="text-4xl md:text-6xl font-display text-white mb-6">
-              Transform Your Vision
+              Transforme Sua Visão
             </h2>
             <p className="text-lg md:text-xl text-white/90">
               NAR Idealize oferece soluções paisagísticas, decoração e projetos

@@ -68,7 +68,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-6xl md:text-8xl font-display font-bold mb-8"
+            className="text-5xl md:text-7xl font-display font-bold mb-8 leading-tight"
             style={{
               background: 'linear-gradient(135deg, #DBF9E0 0%, #A5C34F 100%)',
               WebkitBackgroundClip: 'text',
@@ -76,7 +76,9 @@ const Index = () => {
               backgroundClip: 'text',
             }}
           >
-            Innovation Studio
+            Soluções paisagísticas ideais
+            <br /> pra você, para seu evento
+            <br /> e ambientes corporativos.
           </motion.h1>
           <motion.button
             initial={{ opacity: 0 }}

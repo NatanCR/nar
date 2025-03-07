@@ -119,8 +119,9 @@ const Index = () => {
               Transform Your Vision
             </h2>
             <p className="text-lg md:text-xl text-white/90">
-              We bring innovative solutions to life through cutting-edge technology
-              and design thinking.
+              NAR Idealize oferece soluções paisagísticas, decoração e projetos
+              de qualidade para transformar ambientes internos ou externos.
+              Nos esforçamos para criar um cenário com naturalidade para você.
             </p>
           </div>
         </div>

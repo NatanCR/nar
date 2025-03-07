@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Phone, MapPin, ArrowLeft } from "lucide-react";
@@ -72,7 +73,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-display font-bold mb-8 leading-tight"
+            className="text-4xl md:text-6xl font-display font-bold mb-8 leading-tight"
             style={{
               background: 'linear-gradient(135deg, #DBF9E0 0%, #A5C34F 100%)',
               WebkitBackgroundClip: 'text',

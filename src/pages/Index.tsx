@@ -207,14 +207,19 @@ const Index = () => {
             className="text-center"
           >
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-8">
-              About Us
+              Sobre nós
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We are a forward-thinking digital studio dedicated to creating
-              exceptional experiences through innovative design and technology. Our
-              team of experts combines creativity with technical excellence to
-              deliver solutions that exceed expectations and drive real business
-              value.
+              NAR Idealize, é uma empresa de paisagismo dedicada a criar ambientes 
+              naturais e modernos para eventos e empresas. Nossa missão é envolver 
+              as pessoas em cenários autênticos e significativos, valorizando a 
+              conexão com a natureza. Com nossa paixão pelo meio ambiente, buscamos 
+              inspirar a inserção da natureza em todos os espaços e momentos, 
+              transformando sonhos em realidade através de projetos excepcionais. 
+              Trabalhamos com criatividade, agilidade e competência para tornar 
+              a sua ideia em realidade, nos comprometemos com o seu projeto buscando 
+              a melhor solução paisagística pra você. Nossa constante motivação está 
+              em sintonia com nossos clientes, parceiros e colaboradores, a qual agradecemos.
             </p>
           </motion.div>
         </div>

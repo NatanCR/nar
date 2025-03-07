@@ -230,26 +230,26 @@ const Index = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col items-center text-center gap-12">
-              <h2 className="text-3xl font-display font-bold">Innovation Studio</h2>
+              <h2 className="text-3xl font-display font-bold">NAR Idealize</h2>
               <div className="flex flex-col gap-4">
                 <a
                   href="mailto:contact@innovationstudio.com"
                   className="flex items-center gap-2 hover:text-white/80 transition-colors"
                 >
                   <Mail className="w-5 h-5" />
-                  contact@innovationstudio.com
+                  naridealize@gmail.com
                 </a>
                 <a
                   href="tel:+1234567890"
                   className="flex items-center gap-2 hover:text-white/80 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
-                  +1 (234) 567-890
+                  (11) 95275-0824
                 </a>
-                <div className="flex items-center gap-2">
+{/*                 <div className="flex items-center gap-2">
                   <MapPin className="w-5 h-5" />
                   123 Innovation Street, Tech City
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

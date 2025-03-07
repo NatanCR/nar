@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Phone, MapPin, ArrowLeft } from "lucide-react";
@@ -39,17 +40,17 @@ const Index = () => {
   const servicePages = [
     {
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-      title: "Consulting",
+      title: "Paredes verdes naturais",
       path: "/consulting",
     },
     {
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-      title: "Development",
+      title: "Jardins pendentes",
       path: "/development",
     },
     {
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      title: "Design",
+      title: "Vasos e arranjos",
       path: "/design",
     },
   ];

@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Phone, MapPin, ArrowLeft } from "lucide-react";
@@ -50,6 +49,11 @@ const Index = () => {
     },
   ];
 
+  const handleEmailContact = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.href = "mailto:naridealize@gmail.com?subject=Contact%20Inquiry";
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -85,9 +89,10 @@ const Index = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="bg-white text-primary px-8 py-4 rounded-full inline-flex items-center gap-2 hover:bg-white/90 transition-colors"
+            onClick={handleEmailContact}
           >
             Get in touch
-            <ArrowRight className="w-5 h-5" />
+            <Mail className="w-5 h-5" />
           </motion.button>
         </div>
       </section>

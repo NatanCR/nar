@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Phone, MapPin, ArrowLeft } from "lucide-react";
@@ -10,9 +9,14 @@ const Index = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const carouselImages = [
-    "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-    "https://images.unsplash.com/photo-1500673922987-e212871fec22",
-    "/lovable-uploads/ce229bd5-89fb-4a04-825d-ef7b1a6c31a7.png",
+    "/lovable-uploads/34945213-1026-4f62-b795-e0fe86f57755.png", // Wooden structure with plants
+    "/lovable-uploads/1507d66d-2e52-439e-b287-8729ce3d6eca.png", // Close-up of green leaves
+    "/lovable-uploads/17fd6f62-5819-4531-a3d8-cfef3b3af4a1.png", // ORIGEO green wall
+    "/lovable-uploads/d021ed75-2273-479a-81d5-787d1bb8676c.png", // Wooden beams with hanging plants
+    "/lovable-uploads/e1c112db-cb4f-4dea-ac76-f3bbb0931146.png", // Rooftop garden with plants
+    "/lovable-uploads/bd0abbd4-0b55-47c0-8a93-bde85911aef7.png", // Casa Andorinha sign with plants
+    "/lovable-uploads/eb3f14a5-4f07-48a6-9473-503b3fe79f15.png", // Green wall with neon lights
+    "/lovable-uploads/05463b03-b09e-403d-a571-8f94c0f1ad36.png", // Hanging plants in wooden structure
   ];
 
   const nextSlide = () => {

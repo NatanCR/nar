@@ -21,15 +21,15 @@ const Consulting = () => {
           className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-12"
         >
           <ArrowLeft className="w-5 h-5" />
-          Back to Home
+          Voltar
         </Link>
         <h1 className="text-5xl md:text-7xl font-display font-bold mb-8">
-          Consulting Services
+          Paredes verdes naturais
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mb-16">
-          Our consulting services help businesses navigate digital transformation
-          and achieve their strategic goals through expert guidance and
-          innovative solutions.
+          Transformamos ambientes e eventos com painéis verdes naturais.
+          Trabalhamos com plantas naturais selecionadas para garantir qualidade e impacto visual.
+          Soluções paisagísticas eficientes, elegantes e sob medida para cada projeto.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

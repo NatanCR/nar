@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Phone, MapPin, ArrowLeft } from "lucide-react";
@@ -39,17 +38,17 @@ const Index = () => {
 
   const servicePages = [
     {
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      image: "/lovable-uploads/80a9d6d7-daa5-4804-9bd6-e1d4104763d1.png", // painel-lateral
       title: "Paredes verdes naturais",
       path: "/consulting",
     },
     {
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      image: "/lovable-uploads/49cb830c-9f58-42e4-9117-60fe6b10c78c.png", // jardim-suspenso-lateral
       title: "Jardins pendentes",
       path: "/development",
     },
     {
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+      image: "/lovable-uploads/180969fb-5ceb-4ec8-88f8-0a7330943847.png", // vaso-pequeno
       title: "Vasos e arranjos",
       path: "/design",
     },

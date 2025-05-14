@@ -1,8 +1,8 @@
-
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Phone, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import GradientOverlay from "@/components/GradientOverlay";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -103,32 +103,26 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Image with Text Overlay */}
-      <section className="relative h-screen">
-        <div className="absolute inset-0">
-          <img
-            src="/lovable-uploads/d021ed75-2273-479a-81d5-787d1bb8676c.png"
-            alt="Landscaping Solutions"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50" />
+      {/* Image with Text Overlay - Replaced with GradientOverlay */}
+      <GradientOverlay 
+        imageOne="/lovable-uploads/b35b3370-6f8b-49f8-be56-69b269174f09.png" 
+        imageTwo="/lovable-uploads/0a68e308-2b5c-47d9-b2f0-4d9bf13741fd.png"
+        overlayOpacity={0.4}
+      >
+        <div className="text-center max-w-3xl">
+          <h2 className="text-4xl md:text-6xl font-display text-white mb-6">
+            Transforme Sua Visão
+          </h2>
+          <p className="text-lg md:text-xl text-white/90">
+            NAR Idealize oferece soluções paisagísticas, decoração e projetos
+            de qualidade para transformar ambientes internos ou externos.
+            Nos esforçamos para criar um cenário com naturalidade para você.
+          </p>
         </div>
-        <div className="relative z-10 h-full flex items-center justify-center px-4">
-          <div className="text-center max-w-3xl">
-            <h2 className="text-4xl md:text-6xl font-display text-white mb-6">
-              Transforme Sua Visão
-            </h2>
-            <p className="text-lg md:text-xl text-white/90">
-              NAR Idealize oferece soluções paisagísticas, decoração e projetos
-              de qualidade para transformar ambientes internos ou externos.
-              Nos esforçamos para criar um cenário com naturalidade para você.
-            </p>
-          </div>
-        </div>
-      </section>
+      </GradientOverlay>
 
       {/* Image Carousel */}
-      <section className="py-24 bg-secondary">
+      <section className="py-24 bg-[#DBF9E0]">
         <div className="container">
           <div
             ref={carouselRef}
@@ -167,7 +161,7 @@ const Index = () => {
       </section>
 
       {/* Service Pages Navigation */}
-      <section id="services" className="py-24 bg-brand-green-light">
+      <section id="services" className="py-24 bg-[#A5C34F]">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {servicePages.map((service, index) => (
@@ -198,7 +192,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-24 bg-brand-green">
+      <section className="py-24 bg-[#4D5B58]">
         <div className="container max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

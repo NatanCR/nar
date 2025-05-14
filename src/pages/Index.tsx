@@ -229,7 +229,7 @@ const Index = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col items-center text-center gap-12">
-              <div className="w-48">
+              <div className="w-36">
                 <img 
                   src="/lovable-uploads/3e362d4b-2de1-41ae-ae34-4d3684527ca5.png" 
                   alt="NAR Idealize Logo" 

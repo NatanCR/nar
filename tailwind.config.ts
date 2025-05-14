@@ -45,6 +45,14 @@ export default {
           DEFAULT: "#e5e5e5",
           foreground: "#1a1a1a",
         },
+        // Adding brand colors
+        brand: {
+          green: {
+            light: "#DBF9E0",
+            DEFAULT: "#A5C34F",
+          },
+          dark: "#4D5B58",
+        },
       },
       keyframes: {
         "fade-up": {

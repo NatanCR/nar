@@ -1,6 +1,7 @@
+
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Phone, MapPin, ArrowLeft } from "lucide-react";
+import { ArrowRight, Mail, Phone, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Index = () => {
@@ -93,7 +94,7 @@ const Index = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="bg-white text-primary px-8 py-4 rounded-full inline-flex items-center gap-2 hover:bg-white/90 transition-colors"
+            className="bg-white text-brand-dark px-8 py-4 rounded-full inline-flex items-center gap-2 hover:bg-white/90 transition-colors"
             onClick={handleEmailContact}
           >
             Get in touch
@@ -103,18 +104,18 @@ const Index = () => {
       </section>
 
       {/* Image with Text Overlay */}
-      <section className="relative h-screen">
+      <section className="relative h-screen bg-brand-dark">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
             alt="Featured"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-brand-dark/70" />
         </div>
         <div className="relative z-10 h-full flex items-center justify-center px-4">
           <div className="text-center max-w-3xl">
-            <h2 className="text-4xl md:text-6xl font-display text-white mb-6">
+            <h2 className="text-4xl md:text-6xl font-display text-brand-green-light mb-6">
               Transforme Sua Visão
             </h2>
             <p className="text-lg md:text-xl text-white/90">
@@ -127,7 +128,7 @@ const Index = () => {
       </section>
 
       {/* Image Carousel */}
-      <section className="py-24 bg-secondary">
+      <section className="py-24 bg-brand-green-light">
         <div className="container">
           <div
             ref={carouselRef}
@@ -152,21 +153,21 @@ const Index = () => {
               className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full transition-colors z-10"
               aria-label="Previous slide"
             >
-              <ArrowLeft className="w-6 h-6 text-primary" />
+              <ArrowLeft className="w-6 h-6 text-brand-dark" />
             </button>
             <button
               onClick={nextSlide}
               className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full transition-colors z-10"
               aria-label="Next slide"
             >
-              <ArrowRight className="w-6 h-6 text-primary" />
+              <ArrowRight className="w-6 h-6 text-brand-dark" />
             </button>
           </div>
         </div>
       </section>
 
       {/* Service Pages Navigation */}
-      <section id="services" className="py-24">
+      <section id="services" className="py-24 bg-white">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {servicePages.map((service, index) => (
@@ -185,7 +186,7 @@ const Index = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="absolute inset-0 bg-brand-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
                   <h3 className="text-2xl font-display text-white">
                     {service.title}
                   </h3>
@@ -197,7 +198,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-24 bg-secondary">
+      <section className="py-24 bg-brand-green">
         <div className="container max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -205,10 +206,10 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-8">
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 text-white">
               Sobre nós
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-white/90 leading-relaxed">
               NAR Idealize, é uma empresa de paisagismo dedicada a criar ambientes 
               naturais e modernos para eventos e empresas. Nossa missão é envolver 
               as pessoas em cenários autênticos e significativos, valorizando a 
@@ -225,14 +226,14 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-24 bg-primary text-white">
+      <footer className="py-24 bg-brand-dark text-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col items-center text-center gap-12">
               <h2 className="text-3xl font-display font-bold">NAR Idealize</h2>
               <div className="flex flex-col gap-4">
                 <a
-                  href="mailto:contact@innovationstudio.com"
+                  href="mailto:naridealize@gmail.com"
                   className="flex items-center gap-2 hover:text-white/80 transition-colors"
                 >
                   <Mail className="w-5 h-5" />
@@ -245,10 +246,6 @@ const Index = () => {
                   <Phone className="w-5 h-5" />
                   (11) 95275-0824
                 </a>
-{/*                 <div className="flex items-center gap-2">
-                  <MapPin className="w-5 h-5" />
-                  123 Innovation Street, Tech City
-                </div> */}
               </div>
             </div>
           </div>

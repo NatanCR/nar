@@ -104,18 +104,18 @@ const Index = () => {
       </section>
 
       {/* Image with Text Overlay */}
-      <section className="relative h-screen bg-brand-dark">
+      <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
             alt="Featured"
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-brand-dark/70" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="relative z-10 h-full flex items-center justify-center px-4">
           <div className="text-center max-w-3xl">
-            <h2 className="text-4xl md:text-6xl font-display text-brand-green-light mb-6">
+            <h2 className="text-4xl md:text-6xl font-display text-white mb-6">
               Transforme Sua Visão
             </h2>
             <p className="text-lg md:text-xl text-white/90">
@@ -128,7 +128,7 @@ const Index = () => {
       </section>
 
       {/* Image Carousel */}
-      <section className="py-24 bg-brand-green-light">
+      <section className="py-24 bg-secondary">
         <div className="container">
           <div
             ref={carouselRef}
@@ -153,21 +153,21 @@ const Index = () => {
               className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full transition-colors z-10"
               aria-label="Previous slide"
             >
-              <ArrowLeft className="w-6 h-6 text-brand-dark" />
+              <ArrowLeft className="w-6 h-6 text-primary" />
             </button>
             <button
               onClick={nextSlide}
               className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full transition-colors z-10"
               aria-label="Next slide"
             >
-              <ArrowRight className="w-6 h-6 text-brand-dark" />
+              <ArrowRight className="w-6 h-6 text-primary" />
             </button>
           </div>
         </div>
       </section>
 
       {/* Service Pages Navigation */}
-      <section id="services" className="py-24 bg-white">
+      <section id="services" className="py-24 bg-brand-green-light">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {servicePages.map((service, index) => (

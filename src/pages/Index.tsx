@@ -97,7 +97,7 @@ const Index = () => {
             className="bg-white text-brand-dark px-8 py-4 rounded-full inline-flex items-center gap-2 hover:bg-white/90 transition-colors"
             onClick={handleEmailContact}
           >
-            Get in touch
+            Entre em contato
             <Mail className="w-5 h-5" />
           </motion.button>
         </div>

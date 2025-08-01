@@ -8,9 +8,6 @@ const Development = () => {
     "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     "https://images.unsplash.com/photo-1605379399843-5870eea9b74e",
     "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
   ];
 
   return (

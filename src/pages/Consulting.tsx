@@ -8,9 +8,6 @@ const Consulting = () => {
     "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
     "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     "https://images.unsplash.com/photo-1600880292203-757bb62b4baf",
-    "https://images.unsplash.com/photo-1552664730-d307ca884978",
-    "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
-    "https://images.unsplash.com/photo-1552664688-cf412ec27db2",
   ];
 
   return (

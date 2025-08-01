@@ -8,9 +8,6 @@ const Design = () => {
     "https://images.unsplash.com/photo-1561070791-2526d30994b5",
     "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e",
     "https://images.unsplash.com/photo-1613979813687-1cad02a99554",
-    "https://images.unsplash.com/photo-1572044162444-ad60f128bdea",
-    "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec",
-    "https://images.unsplash.com/photo-1541462608143-67571c6738dd",
   ];
 
   return (

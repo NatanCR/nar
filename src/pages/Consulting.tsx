@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const Consulting = () => {
   const galleryImages = [
     "/lovable-uploads/97796455-20f8-4b93-80f9-5eb7b525b1fc.png",
-    "/lovable-uploads/26a52890-19f2-47f0-aa38-027c7c27b0e8.png",
     "/lovable-uploads/26f7a603-ede7-4eda-82e7-de847be8da98.png",
+    "/lovable-uploads/26a52890-19f2-47f0-aa38-027c7c27b0e8.png",
   ];
 
   return (

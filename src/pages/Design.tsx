@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 const Design = () => {
   const galleryImages = [
-    "https://images.unsplash.com/photo-1561070791-2526d30994b5",
-    "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e",
-    "https://images.unsplash.com/photo-1613979813687-1cad02a99554",
+    "/lovable-uploads/fba09b87-7bf3-4599-bb56-34b13f9a77d0.png",
+    "/lovable-uploads/4b54db37-830f-464d-9607-644172265173.png",
+    "/lovable-uploads/acfbbeb6-7beb-4b73-b055-fea6f8e87a31.png",
   ];
 
   return (
